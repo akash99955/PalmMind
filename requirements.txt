@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+qdrant-client
+redis
+google-generativeai
+pypdf
+python-multipart
+pydantic-settings
+python-dotenv
+aiofiles
+requests

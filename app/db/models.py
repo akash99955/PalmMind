@@ -9,10 +9,8 @@ class DocumentMetadata(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String, index=True)
+    content = Column(String) # Store text content directly for context retrieval
     upload_date = Column(DateTime, default=datetime.utcnow)
-    # Storing associated vector_ids might be useful if needed, 
-    # but strictly separating metadata (SQL) vs Vectors (Qdrant) is fine too.
-    # We can query SQL by filename or ID.
 
 class Booking(Base):
     __tablename__ = "bookings"

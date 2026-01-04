@@ -3,8 +3,6 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     GEMINI_API_KEY: str
-    QDRANT_URL: str = "./qdrant_db" 
-    QDRANT_API_KEY: str | None = None
     REDIS_URL: str = "redis://localhost:6379/0"
     DATABASE_URL: str = "sqlite:///./sql_app.db"
     USE_REDIS: bool = False # set to True if Redis is available
